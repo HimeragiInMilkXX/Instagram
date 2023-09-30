@@ -1,0 +1,153 @@
+.post .author-information {
+
+    padding-bottom: 8px;
+    height: 42px;
+
+}
+
+.post .likes {
+
+    height: 18px;
+    background-color: lightcoral;
+
+}
+
+.post .content-containter {
+
+    margin-top: 8px;
+    height: 37px;
+    background-color: lightseagreen;
+
+}
+
+.post .comments {
+
+    margin-top: 8px;
+    height: 48px;
+    background-color: lightskyblue;
+
+}
+
+.post .add-comment {
+
+    height: 18px;
+    background-color: lightyellow;
+    margin-top: 8px;
+
+}
+
+.post .author-information {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+}
+
+.post .author-information .profile-picture-container {
+
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: double 2.5px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient( white, white ),
+                      linear-gradient(230deg, rgba(225,48,108,1) 0%,
+                      rgba(245,96,64,1) 48%, rgba(255,220,128,1) 100%);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    margin-right: 6px;
+
+}
+
+.author-information .profile-picture-container img {
+
+    width: 87%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0.5px solid rgba( 96, 96, 96, 0.452 );
+
+}
+
+.author-information .name {
+
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    
+
+}
+
+.author-information .name .middle-dot {
+
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba( 96, 96, 96 );
+    position: absolute;
+    top: -4px;
+
+}
+
+.author-information .name .duration {
+
+    font-weight: 400;
+    color: rgba( 96, 96, 96 );
+    margin-left: 9px;
+    vertical-align: middle;
+
+}
+
+.author-information .more {
+
+    width: 24px;
+    position: absolute;
+    right: 2px;
+
+}
+
+.images img {
+    
+    width: 468px;
+
+    position: relative;
+    border: 1px solid rgba( 96, 96, 96, 0.452 );
+    border-radius: 4px;
+
+}
+
+.options {
+
+    background-color: lightblue;
+    height: 40px;
+    margin-bottom: 4px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.options img {
+
+    width: 24px;
+
+}
+
+.options .comment-option {
+
+    margin-left: 15px;
+
+}
+
+.options .save-option {
+
+    position: absolute;
+    right: 0;
+
+}
