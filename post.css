@@ -5,37 +5,6 @@
 
 }
 
-.post .likes {
-
-    height: 18px;
-    background-color: lightcoral;
-
-}
-
-.post .content-containter {
-
-    margin-top: 8px;
-    height: 37px;
-    background-color: lightseagreen;
-
-}
-
-.post .comments {
-
-    margin-top: 8px;
-    height: 48px;
-    background-color: lightskyblue;
-
-}
-
-.post .add-comment {
-
-    height: 18px;
-    background-color: lightyellow;
-    margin-top: 8px;
-
-}
-
 .post .author-information {
 
     display: flex;
@@ -111,19 +80,34 @@
 
 }
 
-.images img {
+.images {
+
+    position: relative;
+
+}
+
+.images img:nth-of-type(1) {
     
     width: 468px;
 
     position: relative;
-    border: 1px solid rgba( 96, 96, 96, 0.452 );
+    border: 1px solid rgba(96, 96, 96, 0.24);
     border-radius: 4px;
+
+}
+
+.images .next-image {
+
+    width: 30px;
+    position: absolute;
+    right: 6.5px;
+    top: 46%;
+    cursor: pointer;
 
 }
 
 .options {
 
-    background-color: lightblue;
     height: 40px;
     margin-bottom: 4px;
 
@@ -151,3 +135,197 @@
     right: 0;
 
 }
+
+.post .likes {
+
+    height: 18px;
+    display: flex;
+    align-items: center;
+
+}
+
+.likes .liker-pictures {
+
+    width: 22px;
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.likes .like-amount {
+
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+
+}
+
+.likes .liker-pictures img {
+
+    width: 13px;;
+    border: 2px solid white;
+    border-radius: 100px;
+
+}
+
+.liker-pictures .liker-one {
+
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+}
+
+.liker-pictures .liker-two {
+
+    position: absolute;
+    top: 0;
+    right: -2px;
+
+}
+
+.post .content-container {
+
+    margin-top: 8px;
+    height: 37px;
+
+}
+
+.post .content-container .content {
+
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+
+}
+
+.post .content-container .content .author-name {
+
+    margin-right: 4px;
+    font-weight: 500;
+
+}
+
+.post .content-container .translation {
+
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 4px;
+
+}
+
+.post .comments {
+
+    margin-top: 8px;
+
+}
+
+.comments .amount {
+
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    margin-bottom: 4px;
+
+}
+
+.comments .comment-container {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+
+}
+
+.comments .comment-container .like-comment {
+
+    position: absolute;
+    right: 0;
+    top: 4.5px;
+    width: 13px;
+    margin-right: 5px;
+
+}
+
+.comment-container .author-name {
+
+    font-weight: 500;
+    margin-right: 3px;
+
+}
+
+.comment-container .text {
+
+    position: relative;
+
+}
+
+.comment-container .text .tag {
+
+    color: rgb(0, 55, 107);
+    padding-left: 13px;
+
+}
+
+.comment-container .text .at {
+
+    position: absolute;
+    left: 0;
+    top: 0.3px;
+
+}
+
+
+.post .add-comment {
+
+    height: 18px;
+    margin-top: 4px;
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+
+}
+
+.post .add-comment input {
+
+    background-color: none;
+    border: none;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    flex: 1;
+
+}
+
+.post .add-comment input::placeholder {
+
+    color: rgb(115, 115, 115);
+
+}
+
+.post .add-comment .add-emoji {
+
+    width: 13px;
+    margin-right: 5px;
+
+}
+
+.options img:hover,
+.content-container .author-name:hover,
+.add-comment .add-emoji:hover,
+.comment-container .like-comment:hover,
+.author-information .name .middle-dot:hover {
+
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+
