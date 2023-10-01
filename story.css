@@ -1,0 +1,49 @@
+.story {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 70px;
+    cursor: pointer;
+
+}
+
+.story .profile-picture-container {
+
+    height: 62px;
+    width: 62px;
+    margin-right: 0;
+
+}
+
+.story .profile-picture-container img {
+
+    width: 94%;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    border: 0.5px solid rgba( 96, 96, 96, 0.452 );
+
+}
+
+.story .stories-username {
+
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 94%;
+    text-align: center;
+    margin-top: 4px;
+
+}
+
+.stories .next-list {
+
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+
+}
